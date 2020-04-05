@@ -1,0 +1,15 @@
+{
+  "name": "type-tamil-inscript",
+  "collaborators": [
+    "SWAMINATHAN Gurukandhamoorthi <ds.gurukandhamoorthi@gmail.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "type_tamil_inscript_bg.wasm",
+    "type_tamil_inscript.js",
+    "type_tamil_inscript.d.ts"
+  ],
+  "module": "type_tamil_inscript.js",
+  "types": "type_tamil_inscript.d.ts",
+  "sideEffects": "false"
+}

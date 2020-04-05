@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+ <script type="module">
+   import init, {transform} from "./pkg/type_tamil_inscript.js";
+   async function run() {
+   await init();
+   const source = document.getElementById("source");
+    const result = transform(source.value);
+    console.log(result);
+    document.getElementById("output").textContent = result;
+   }
+
+   source.addEventListener("keyup", run, false);
+   source.addEventListener("change", run, false);
+
+ </script>
+ <form>
+ <div class="form-group">
+  <input id="source" value="guru" type="text" class="form-control"/>
+ </div>
+ <div class="form-group">
+  <div id="output" class="form-control"></div>
+ </div>
+ </form>
+
+</body>
+</html>
