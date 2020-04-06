@@ -8,17 +8,8 @@
 </head>
 <body>
  <script type="module">
-   import init, {transform} from "./pkg/type_tamil_inscript.js";
-   async function run() {
-   await init();
-   const source = document.getElementById("source");
-    const result = transform(source.value);
-    document.getElementById("output").textContent = result;
-   }
-
-   source.addEventListener("keyup", run, false);
-   source.addEventListener("change", run, false);
-
+   import init from "./pkg/type_tamil_inscript.js";
+   init();
  </script>
  <form>
  <div class="form-group">
