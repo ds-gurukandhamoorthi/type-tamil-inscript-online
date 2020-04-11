@@ -5,20 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script>
 </head>
 <body>
  <script type="module">
    import init from "./pkg/type_tamil_inscript.js";
    init();
+   new ClipboardJS('.btn');
  </script>
- <form>
  <div class="form-group">
   <input id="source" value="Start typing in inscript: lcfBfnd..." type="text" class="form-control"/>
  </div>
  <div class="form-group">
+ <button class='btn btn-primary' data-clipboard-target='#output' title='Copy Text' data-placement='top'> Copy to Clipboard </button>
   <div id="output" class="form-control"></div>
  </div>
- </form>
 
 </body>
 </html>
