@@ -11,5 +11,5 @@
   ],
   "module": "type_tamil_inscript.js",
   "types": "type_tamil_inscript.d.ts",
-  "sideEffects": "false"
+  "sideEffects": false
 }
